@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Door from './Door';
+import useSound from 'use-sound'
 import './App.css';
 
 
@@ -17,7 +18,7 @@ function App() {
   },[])
 
   useEffect(() => {
-    if(show === 0) {
+    if(show === 1) {
       if(selectedDoor !== prizeDoor) {
         setHiddenDoor(prizeDoor)
       }
@@ -27,6 +28,8 @@ function App() {
       }
     }
   },[selectedDoor])
+
+  const [winner] = useSound('W.mp3');
 
   const randomizeDoors = () => {
     setPrizeDoor(Math.floor(Math.random()*numDoors));
@@ -38,26 +41,17 @@ function App() {
     setShow(1);
   }
 
-  function handleHiddenDoor() {
-    if(selectedDoor !== prizeDoor) {
-      return prizeDoor;
-    }
-    else {
-      var randMod = Math.ceil(Math.random()*(numDoors-1))
-      console.log("Random Mod: " + randMod);
-      console.log((selectedDoor + randMod)%numDoors);
-      return (selectedDoor + randMod) % numDoors;
-    }
-  }
-
   const chooseFinalDoor = (num) => {
-    if(num === selectedDoor && prizeDoor === selectedDoor){
-      console.log("Stay winner");
-      setStats(prevStats => ({...prevStats, stayed:prevStats.stayed+1}))  
-    }
-    else if(num !== selectedDoor && prizeDoor === num) {
-      console.log("Switch winner");
-      setStats(prevStats => ({...prevStats, switched:prevStats.switched+1}))
+    if (num === prizeDoor) {
+      winner();
+      if(num === selectedDoor){
+        console.log("Stay winner");
+        setStats(prevStats => ({...prevStats, stayed:prevStats.stayed+1}))  
+      }
+      else {
+        console.log("Switch winner");
+        setStats(prevStats => ({...prevStats, switched:prevStats.switched+1}))
+      }
     }
 
     setSelectedDoor(num);
