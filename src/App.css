@@ -1,3 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.monty-hall-main {
+  padding: 50;
+  margin: 50;
+}
+
 .doors {
   display:flex;
+}
+
+.doors img {
+  width: 30%;
 }
