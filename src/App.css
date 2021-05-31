@@ -15,3 +15,7 @@
 .doors img {
   width: 30%;
 }
+
+.doors img:hover {
+  filter: saturate(300%) brightness(70%) hue-rotate(3deg);
+}
