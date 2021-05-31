@@ -1,9 +1,10 @@
 import doorImg from './images/door.webp'
 
 const Door = (props) => {
+    var path = !props.revealed ? doorImg : props.behindImg;
     return (
         <>
-            <img src={props.selected || props.revealed ? props.behindImg : doorImg} alt="door" onClick={() => props.click(props.number)}></img>
+            <img src={path} alt="door" onClick={() => props.click(props.number)}></img>
         </>
     )
 }
