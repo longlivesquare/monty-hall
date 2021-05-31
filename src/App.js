@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import Door from './Door';
 import useSound from 'use-sound'
+import kevin from './images/kevin.png'
+import car from './images/car.jpg'
+import win from './sounds/W.mp3'
 import './App.css';
 
 
@@ -29,7 +32,7 @@ function App() {
     }
   },[selectedDoor])
 
-  const [winner] = useSound('W.mp3');
+  const [winner] = useSound(win);
 
   const randomizeDoors = () => {
     setPrizeDoor(Math.floor(Math.random()*numDoors));
@@ -78,7 +81,7 @@ const reset = () => {
             key={number}
             number={number}
             click={show === 0 ? chooseFirstDoor : show === 1 ? chooseFinalDoor : reset}
-            behindImg={number === prizeDoor ? "car.jpg" : "kevin.png"}
+            behindImg={number === prizeDoor ? car : kevin}
             selected={number === selectedDoor &&  show=== 2}
             revealed={number !== hiddenDoor && number !== selectedDoor && show >= 1}
           />
@@ -86,6 +89,7 @@ const reset = () => {
         })}
       </div>
       {show === 1 ?<h3>The host has revealed one of the other doors after selecting. Do you want to switch?</h3> : null}
+      <button onClick={reset}>Restart</button>
       <h2>Stats:</h2>
       Wins by staying: {stats.stayed}<br />
       Wins by switching: {stats.switched}
