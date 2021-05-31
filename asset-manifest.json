@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/monty-hall/static/css/main.5314a6a1.chunk.css",
+    "main.js": "/monty-hall/static/js/main.282f3083.chunk.js",
+    "main.js.map": "/monty-hall/static/js/main.282f3083.chunk.js.map",
+    "runtime-main.js": "/monty-hall/static/js/runtime-main.075df961.js",
+    "runtime-main.js.map": "/monty-hall/static/js/runtime-main.075df961.js.map",
+    "static/js/2.f36d0f7c.chunk.js": "/monty-hall/static/js/2.f36d0f7c.chunk.js",
+    "static/js/2.f36d0f7c.chunk.js.map": "/monty-hall/static/js/2.f36d0f7c.chunk.js.map",
+    "static/js/3.7d5928db.chunk.js": "/monty-hall/static/js/3.7d5928db.chunk.js",
+    "static/js/3.7d5928db.chunk.js.map": "/monty-hall/static/js/3.7d5928db.chunk.js.map",
+    "static/js/4.c6cf458c.chunk.js": "/monty-hall/static/js/4.c6cf458c.chunk.js",
+    "static/js/4.c6cf458c.chunk.js.map": "/monty-hall/static/js/4.c6cf458c.chunk.js.map",
+    "index.html": "/monty-hall/index.html",
+    "static/css/main.5314a6a1.chunk.css.map": "/monty-hall/static/css/main.5314a6a1.chunk.css.map",
+    "static/js/2.f36d0f7c.chunk.js.LICENSE.txt": "/monty-hall/static/js/2.f36d0f7c.chunk.js.LICENSE.txt",
+    "static/js/3.7d5928db.chunk.js.LICENSE.txt": "/monty-hall/static/js/3.7d5928db.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.075df961.js",
+    "static/js/2.f36d0f7c.chunk.js",
+    "static/css/main.5314a6a1.chunk.css",
+    "static/js/main.282f3083.chunk.js"
+  ]
+}
