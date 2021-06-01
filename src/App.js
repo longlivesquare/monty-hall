@@ -100,7 +100,7 @@ const reset = () => {
           )
         })}
       </div>
-      {show === 1 ?<h3>The host has revealed one of the other doors after selecting. Do you want to switch?</h3> : null}
+      {show === 1 ?<h3>The host has revealed one of the other doors. Do you want to switch?</h3> : null}
       <button onClick={reset}>Restart</button>
       <h2>Stats:</h2>
       Total plays: {stats.plays}<br />

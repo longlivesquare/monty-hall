@@ -4,8 +4,9 @@
 }
 
 .monty-hall-main {
-  padding: 50;
-  margin: 50;
+  margin: auto;
+  width: 85%;
+  padding: 10px;
 }
 
 .doors {
