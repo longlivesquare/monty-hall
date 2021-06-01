@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/monty-hall/static/css/main.5314a6a1.chunk.css",
-    "main.js": "/monty-hall/static/js/main.2aef33ce.chunk.js",
-    "main.js.map": "/monty-hall/static/js/main.2aef33ce.chunk.js.map",
+    "main.css": "/monty-hall/static/css/main.53119e27.chunk.css",
+    "main.js": "/monty-hall/static/js/main.5a419107.chunk.js",
+    "main.js.map": "/monty-hall/static/js/main.5a419107.chunk.js.map",
     "runtime-main.js": "/monty-hall/static/js/runtime-main.075df961.js",
     "runtime-main.js.map": "/monty-hall/static/js/runtime-main.075df961.js.map",
     "static/js/2.523620b7.chunk.js": "/monty-hall/static/js/2.523620b7.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/4.c6cf458c.chunk.js": "/monty-hall/static/js/4.c6cf458c.chunk.js",
     "static/js/4.c6cf458c.chunk.js.map": "/monty-hall/static/js/4.c6cf458c.chunk.js.map",
     "index.html": "/monty-hall/index.html",
-    "static/css/main.5314a6a1.chunk.css.map": "/monty-hall/static/css/main.5314a6a1.chunk.css.map",
+    "static/css/main.53119e27.chunk.css.map": "/monty-hall/static/css/main.53119e27.chunk.css.map",
     "static/js/2.523620b7.chunk.js.LICENSE.txt": "/monty-hall/static/js/2.523620b7.chunk.js.LICENSE.txt",
     "static/js/3.7d5928db.chunk.js.LICENSE.txt": "/monty-hall/static/js/3.7d5928db.chunk.js.LICENSE.txt",
     "static/media/W.da8c527d.mp3": "/monty-hall/static/media/W.da8c527d.mp3",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.075df961.js",
     "static/js/2.523620b7.chunk.js",
-    "static/css/main.5314a6a1.chunk.css",
-    "static/js/main.2aef33ce.chunk.js"
+    "static/css/main.53119e27.chunk.css",
+    "static/js/main.5a419107.chunk.js"
   ]
 }
